@@ -6,8 +6,8 @@ String password = request.getParameter("password");
 
 if (id.equals(password)) {
 	// ID와 암호가 같으면 로그인에 성공한 것으로 판단.
-	response.addCookie(Cookies.createCookie("AUTH", id, "/", -1));
-	response.sendRedirect("../main/index.jsp");//쿠키 만들고 index로 보냄
+	session.setAttribute("MEMBERID", id);
+	response.sendRedirect("../main/index.jsp");
 %>
 
 <%

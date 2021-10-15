@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%
 	String memberId = (String)session.getAttribute("MEMBERID");
-	boolean login = memberId == null ? false : true;
+	boolean login = (memberId == null) ? false : true;
 %>
 <html>
 <head>

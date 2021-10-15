@@ -39,6 +39,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">세션을 시작하려면 로그인하세요.</p>
 
+<form action="logout.jsp"></form>
     <form action="login.jsp" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="ID" name="id">

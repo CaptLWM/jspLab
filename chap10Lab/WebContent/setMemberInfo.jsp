@@ -2,6 +2,7 @@
 <%
 	session.setAttribute("MEMBERID", "madvirus");
 	session.setAttribute("NAME", "최범균");
+	session.setMaxInactiveInterval(15);
 %>
 <html>
 <head><title>세션에 정보 저장</title></head>

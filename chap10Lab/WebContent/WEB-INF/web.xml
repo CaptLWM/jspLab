@@ -8,5 +8,6 @@
 
 	<session-config>
 		<session-timeout>60</session-timeout>
-	</session-config>
+	</session-config> 
+<!-- 	모든페이지 세션 60초로 설정 -->
 </web-app>
