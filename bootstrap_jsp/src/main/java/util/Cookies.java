@@ -1,4 +1,4 @@
-package uitl;
+package util;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.Cookie;

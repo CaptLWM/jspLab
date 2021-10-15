@@ -39,13 +39,13 @@
   <div class="login-box-body">
     <p class="login-box-msg">세션을 시작하려면 로그인하세요.</p>
 
-    <form action="../main/index.jsp" method="post">
+    <form action="login.jsp" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="ID" name="id" size="10">
+        <input type="text" class="form-control" placeholder="ID" name="id">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password" name="password" size="10">
+        <input type="password" class="form-control" placeholder="Password" name="password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
