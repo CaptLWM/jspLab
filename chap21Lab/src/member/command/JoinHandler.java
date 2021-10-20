@@ -33,6 +33,7 @@ public class JoinHandler implements CommandHandler {
 	}
 
 	private String processSubmit(HttpServletRequest req, HttpServletResponse res) {
+		// DTO(Data Transfer Object)
 		JoinRequest joinReq = new JoinRequest();
 		joinReq.setId(req.getParameter("id"));
 		joinReq.setName(req.getParameter("name"));

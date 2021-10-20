@@ -40,6 +40,9 @@ public class ControllerUsingURI extends HttpServlet {
         String configFilePath = getServletContext().getRealPath(configFile);
         // D:\dev\workspace\jsp\chap21Lab\WebContent\WEB-INF\commandHandlerURI.properties
         try (FileReader fis = new FileReader(configFilePath)) {
+        	// 매개변수(fis)를 바탕으로 맵구조({key:value})로 만든다.
+        	// 예) {"/join.do":"member.command.JoinHandler"}
+        	//      {"/login.do":"auth.command.LoginHandler"} ...
             prop.load(fis);
         } catch (IOException e) {
             throw new ServletException(e);
@@ -55,6 +58,7 @@ public class ControllerUsingURI extends HttpServlet {
                 CommandHandler handlerInstance = 
                         (CommandHandler) handlerClass.newInstance();
                 // member.command.JoinHandler 객체 생성
+                // CommandHandler handlerInstance = new JoinHandler();
                 commandHandlerMap.put(command, handlerInstance);
             } catch (ClassNotFoundException | InstantiationException 
             		| IllegalAccessException e) {

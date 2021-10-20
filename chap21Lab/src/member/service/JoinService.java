@@ -22,7 +22,7 @@ public class JoinService {
 			Member member = memberDao.selectById(conn, joinReq.getId());
 			if (member != null) {
 				JdbcUtil.rollback(conn);
-				throw new DuplicateIdException();
+				throw new DuplicateIdException(); // 예외발생
 			}
 
 			memberDao.insert(conn, new Member(joinReq.getId(), joinReq.getName(), joinReq.getPassword(), new Date()));
