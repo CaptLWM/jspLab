@@ -332,6 +332,10 @@
 
                     <div class="col-sm-10">
                       <input type="text" class="form-control" name="curPwd" placeholder="password">
+                      <%-- <span style="color: red">
+                      	<c:if test="${errors.curPwd}">현재 암호를 입력하세요.</c:if>
+					  	<c:if test="${errors.badCurPwd}">현재 암호가 일치하지 않습니다.</c:if>
+					  </span> --%>
                     </div>
                   </div>
                   <div class="form-group">
@@ -339,6 +343,9 @@
 
                     <div class="col-sm-10">
                       <input type ="text" class="form-control" name="newPwd" placeholder="password">
+                      <%-- <span style="color: red">
+                      	<c:if test="${errors.newPwd}">새 암호를 입력하세요.</c:if>
+                      </span> --%>
                     </div>
                   </div>
                   <div class="form-group">
